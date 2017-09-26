@@ -11,9 +11,10 @@ export class InformacionService {
 
   this.http.get("assets/data/info.pagina.json")
               .subscribe(data =>{
-                console.log(data.json());
-                this.cargada = true;
                 this.info = data.json();
+                console.log(this.info);
+                this.cargada = true;
+
               })
 
   }
