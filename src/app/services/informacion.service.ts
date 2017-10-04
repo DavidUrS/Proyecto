@@ -28,7 +28,7 @@ export class InformacionService {
                 .subscribe(data =>{
                   this.equipo = data.json();
                   this.cargada_sobre_nosotros = true;
-                  console.log(this.equipo);
+                  // console.log(this.equipo);
                 })
   }
 
