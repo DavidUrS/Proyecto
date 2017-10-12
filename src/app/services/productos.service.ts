@@ -21,7 +21,7 @@ export class ProductosService {
     this.producto_cargado = true;
       this.http.get("https://mundo-web.firebaseio.com/productos_idx.json")
       .subscribe(res=>{
-        console.log(res.json());
+      
           this.producto_cargado = false;
           this.productos= res.json();
       });

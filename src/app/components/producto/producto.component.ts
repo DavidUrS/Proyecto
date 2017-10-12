@@ -22,7 +22,6 @@ cod:string = undefined;
       .subscribe( res =>{
         this.cod=parametros['id'];
         this.producto = res.json();
-        console.log(this.producto);
       })
     })
   }
