@@ -15,9 +15,9 @@ export class ProductosService {
   }
 
   public buscar_producto(termino:string){
-    console.log("Buscando Productos");
-    console.log(this.productos.length);
-    console.log(termino);
+    // console.log("Buscando Productos");
+    // console.log(this.productos.length);
+    // console.log(termino);
 
     if(this.productos.length==0){
       this.cargar_productos().then( ()=>{
@@ -36,7 +36,7 @@ export class ProductosService {
     this.productos.forEach(prod=>{
       if(prod.categoria.toLowerCase().indexOf(termino) >=0 || prod.titulo.toLowerCase().indexOf(termino) >=0){
         this.productos_filtrados.push(prod);
-        console.log(prod);
+        // console.log(prod);
       }
       // console.log(prod);
     });
